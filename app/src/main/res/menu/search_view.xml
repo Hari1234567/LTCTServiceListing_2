@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item
+       android:icon="@drawable/ic_baseline_arrow_upward_24"
+       app:showAsAction="ifRoom"
+       android:id="@+id/pageStartBut"
+       android:title="Search" />
+   <item
+       android:icon="@drawable/ic_baseline_arrow_downward_24"
+       app:showAsAction="ifRoom"
+       android:id="@+id/pageEndBut"
+       android:title="Search" />
+   <item
+       android:icon="@drawable/search_icon"
+       app:showAsAction="ifRoom"
+       android:id="@+id/searchView"
+       android:title="Search" />
+
+</menu>

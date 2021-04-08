@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    >
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text = "1"
+        android:background="@drawable/border"
+
+        android:id="@+id/snoText"/>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:text = "MeterText"
+        android:layout_toRightOf="@id/snoText"
+        android:gravity="start"
+        android:id = "@+id/meterNameText"
+        />
+
+    <Button
+        android:id="@+id/detailsBut"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/meterNameText"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custombutton2"
+        android:text="DETAILS"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

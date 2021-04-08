@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search Filters"
+
+        app:showAsAction="ifRoom|withText">
+        <menu>
+
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/ManageSearch"
+                    android:title="Manage Search Filters"
+                    android:icon="@drawable/search_icon"
+
+                    />
+                <item android:id="@+id/ClearSearch"
+                    android:icon="@drawable/clear"
+                    android:title="Clear Search Filters"
+                    />
+
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="Division"
+
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item android:id = "@+id/Porur"
+                    android:icon = "@drawable/map_logo"
+                    android:title = "Porur"/>
+                <item android:id = "@+id/Guindy"
+                    android:icon = "@drawable/map_logo"
+                    android:title = "Guindy"/>
+                <item android:id = "@+id/KKNagar"
+                    android:icon = "@drawable/map_logo"
+                    android:title = "KK Nagar"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+
+    <item android:id = "@+id/userList"
+        android:icon = "@drawable/users_logo"
+        android:title = "Manager Users"/>
+
+    <item android:id="@+id/LogOut"
+        android:icon = "@drawable/signout_logo"
+        android:title="Sign Out" />
+
+
+</menu>

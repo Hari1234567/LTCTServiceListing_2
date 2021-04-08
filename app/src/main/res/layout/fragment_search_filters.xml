@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/bg3"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".SearchFiltersFrag">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/applyBut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_marginTop="30dp"
+
+                    android:text="APPLY" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text = "MANAGE SEARCH FILTERS"
+                    android:textSize = "20sp"
+
+                    android:id="@+id/title"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+
+                    android:text = "CANCEL"
+                    android:id = "@+id/cancelBut"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/border"
+           android:orientation="horizontal">
+
+           <TextView
+
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="start"
+               android:text="Consumer Name:"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <EditText
+               android:id="@+id/consumerNameText"
+               android:layout_width="232dp"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:textSize="15sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Account Number:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+
+           <EditText
+               android:id="@+id/AccNoText"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+               android:inputType="text"
+               android:textColor="@drawable/custom_edit_color"
+               android:textSize="15sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CT Coil Ratio:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+               android:textSize="15sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:id = "@+id/CTCoilRatio"
+               />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CT Make:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/CTMake"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sub-Division:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/division"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Load:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/Load"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="MF:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/MF"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Meter Make:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/MeterMake"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Meter No:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/MeterNo"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="PO No:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/PoNo"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Section:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/Section"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Service Date:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/ServiceDate"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tariff:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+
+           <EditText
+               android:id="@+id/Tariff"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+               android:gravity="center"
+
+               android:inputType="text"
+               android:textColor="@drawable/custom_edit_color"
+               android:textSize="15sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Class:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/Class"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/border"
+           >
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Seal No:"
+               android:gravity="start"
+               android:textSize="20sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+           <EditText
+               android:textColor="@drawable/custom_edit_color"
+               android:inputType="text"
+               android:layout_width="232dp"
+               android:layout_height="39dp"
+
+               android:gravity="center"
+               android:textSize="15sp"
+               android:id = "@+id/SealNo"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+   </FrameLayout>
+
+
+

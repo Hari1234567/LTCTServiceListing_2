@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/bg3"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".SearchFiltersFrag">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        android:isScrollContainer="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/applyBut"
+                    android:layout_width="70dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_marginTop="30dp"
+
+                    android:text="SAVE" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text = "SEAL FORM"
+                    android:textSize = "20sp"
+
+                    android:id="@+id/title"
+                    />
+                <TextView
+                    android:layout_width="70dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+
+                    android:text = "CANCEL"
+                    android:id = "@+id/cancelBut"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="CT Secondary 1"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/CTSecondarySeal1"
+                    android:layout_width="232dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:textSize="15sp"
+
+                    android:nextFocusDown="@id/CTSecondarySeal2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CT Secondary 2:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <EditText
+                    android:id="@+id/CTSecondarySeal2"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColor="@drawable/custom_edit_color"
+                    android:textSize="15sp"
+                    android:nextFocusDown="@id/CTSecondarySeal3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CT Secondary 3:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:nextFocusDown="@id/MeterA1Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id = "@+id/CTSecondarySeal3"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter A 1:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:nextFocusDown="@id/MeterA2Seal"
+                    android:id = "@+id/MeterA1Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter A 2:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:nextFocusDown="@id/MeterB1Seal"
+                    android:id = "@+id/MeterA2Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter B 1:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/MeterB1Seal"
+                    android:nextFocusDown="@id/MeterB2Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter B 2:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                     android:nextFocusDown="@id/MDSeal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/MeterB2Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MD:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/MRISeal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/MDSeal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRI:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/TTB1Seal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/MRISeal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TTB 1:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/TTB2Seal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/TTB1Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TTB 2:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/TTBHSeal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/TTB2Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TTBH:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/MBFHSeal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/TTBHSeal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MBFH:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <EditText
+                    android:id="@+id/MBFHSeal"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:nextFocusDown="@id/CTBH1Seal"
+                    android:inputType="text"
+                    android:textColor="@drawable/custom_edit_color"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CTBH 1:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+                    android:nextFocusDown="@id/CTBH2Seal"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/CTBH1Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CTBH 2:"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <EditText
+                    android:textColor="@drawable/custom_edit_color"
+                    android:inputType="text"
+                    android:layout_width="232dp"
+                    android:layout_height="39dp"
+
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id = "@+id/CTBH2Seal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
